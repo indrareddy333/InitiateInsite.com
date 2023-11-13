@@ -1,0 +1,130 @@
+<!Doctype Html>
+<head> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+<link rel = "stylesheet" href="Style.css" />
+ <title> InitiateInsite </title>
+ 
+ <script type = "text/javascript" >
+    function check(){
+	var uname = document.getElementById("uname").value;
+	var pwd = document.getElementById("pwd").value;
+	
+	if(uname == 'USERNAME'&& pwd == 'PASSWORD'){
+	   document.getElementById("form1").action="Home.html";
+	}
+	else{
+	   document.getElementById("err").innerHTML="Username or Password is Incorrect !";
+	   return false;
+	}
+	
+	}
+
+ </script>
+</head>
+
+<body> 
+
+<div class="topheader">
+  <div class="left" ><a href="https://instagram.com/i_n_d_r_a__r_e_d_d_y?utm_source=qr&igshid=MTF6MTU0ZGJ1NnU2bA==" target = "_blank" >Insta ID-indrareddy</a></div>
+  <div class="right">Gmail-reddyindra843@gmail.com</div>
+</div>
+
+
+
+<div class = "header">
+   <div class="row">
+       <div class="hpart1"><img src="logoN.png"></div>
+	   <div class="hpart2">InitiateInsite</div>
+	</div>
+</div>
+ 
+ 
+<div class = "menubar">
+<ul>
+  <li><a href="Login.hmtl">Home</a></li>
+  <li><a href = "#about">About</a></li>
+  <li><a href="#course">Courses</a></li>
+  <li><a href="#future" >Future Courses</a></li>
+</ul>
+</div>
+
+</br>
+</br>
+</br>
+</br>
+<div class = "bodypart1">
+<h1 class="WELCOME">
+Welcome ! </br>
+Register For Free...
+</h1>
+
+
+<form name = "form1" id = "form1" onsubmit="return check()" >
+<div >
+  <p class = "InputTy"> USERNAME</br>
+  <input class="input" name ="name" id="uname" placeholder="TYPE 'USERNAME'" type = "text" onsubmit="return check()" value=""/>
+  </br>
+   </br>
+    PASSWORD</br>
+	<input class="input" name="pwd" id="pwd" type = "PASSWORD" placeholder="TYPE' PASSWORD'" onsubmit="return check()" value=""/>
+	
+	<h6 class = "error" id="err" style="text-align:center;color:red"></h6>
+	</br>
+	<input class="submit3";" type="submit" value="login"/>
+   </p>
+</div>
+</form>
+</div>
+</br>
+</br>
+</br>
+</br>
+</br>
+<div class = "footer" id = "about">
+</br>
+
+   <div class="f1">
+      <h1 class="sectitle1" > Courses Avaliable </h1>
+	  </br>
+      <p class="sectitle2" > Programming course </p>
+	  <p class="sectitle2" > HTML Course  </p>
+	  <p class="sectitle2" > CSS course </p>
+	  <p class="sectitle2" > JavaScript Course </p>
+	  <p class="sectitle2" > Java Course </p>
+	  <p class="sectitle2" > Adv.Java Course  </p>
+	  <p class="sectitle2" > MYSQL Course  </p>
+	  
+	 
+   </div>
+   <div class="f1">
+   <h1 class="sectitle1" > Social Media </h1>
+   </br>
+      <p class="sectitle2" > Facebook </p>
+	  <p class="sectitle2" > Twitter </p>
+	  <p class="sectitle2" > Linkedin </p>
+	  <p class="sectitle2" > Instagram </p>
+	  <p class="sectitle2" > Telegram </p>
+	  
+   </div>
+   <div class="f2">
+   <h1 class="sectitle1" > Give Feedback</h1>
+   </br>
+   <form>
+    <p class="sectitle2">Email :</p>
+	<input class="sectitle3" placeholder="Example:abc@gmail.com"    type  = "email"></br>
+	</br>
+	<p class="sectitle2" id="n">Feedback :</p> 
+	<textarea value="" placeholder="write your feedback here &#128512;"id="text" name="text" class="sectitle5" rows="8" cols="55" ></textarea></br>
+	</br>
+	<a  href="Thankyou3.html" class="sectitle4" >submit</a> 
+   </form>
+   </div>
+</div>
+<div class="copyright">
+	  &#169; 2023 InitiateInsite
+</div>
+
+
+
+</body>
