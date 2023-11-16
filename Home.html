@@ -4,11 +4,40 @@
 <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
 <link rel = "stylesheet" href="Style.css" />
  <title> InitiateInsite </title>
+ <script type="text/javascript">
+ function check()
+ {
+ try{
+ var urlstring=window.location.search;
+ var checkstr = urlstring.substring(1);
+ var spiltarray = checkstr.split('&',2);
+ var uname = spiltarray[0].substring(spiltarray[0].indexOf('=')+1);
+ var pwd = spiltarray[1].substring(spiltarray[1].indexOf('=')+1);
+ 
+ if(uname == 'USERNAME'&& pwd == 'PASSWORD'){
+	   alert("Sucessfully Signed In &#127881;")
+	}
+	else{
+	   alert("SomeThing Went Wrong");
+	   window.location.href="Login.html";
+	}
+	}
+	
+	catch(err){
+	alert("SomeThing Went Wrong");
+	   window.location.href="Login.html";
+	
+	}
+	
+	
+	
+}
+ </script>
  
  
 </head>
 
-<body> 
+<body onload = "check()"> 
 
 <div class="topheader">
   <div class="left" ><a href="#" target = "_blank" >Insta ID-indrareddy</a></div>
@@ -48,7 +77,7 @@
 	<a href="#"> Programming Course</a>
 	</br>
 	<div class="Enrole">
-	<a href="Programming_Course.html"> Enrole </a>
+	<a href="Programming_Course.html" > Enrole </a>
 	</div>
     </div>
 	
@@ -59,7 +88,7 @@
 	<a href="#"> HTML 5  Course</a>
 	</br>
 	<div class="Enrole">
-	<a href="#"> Enrole </a>
+	<a href="HTML5.html"> Enroll</a>
 	</div>
     </div>
 	
@@ -70,7 +99,7 @@
 	<a href="#"> CSS 3  Course</a>
 	</br>
 	<div class="Enrole">
-	<a href="#"> Enrole </a>
+	<a href="Css_Course.html"> Enroll </a>
 	</div>
     </div>
 	
@@ -81,7 +110,7 @@
 	<a href="#"> JavaScript Course</a>
 	</br>
 	<div class="Enrole">
-	<a href="#"> Enrole </a>
+	<a href="JavaScript_Course.html"> Enroll</a>
 	</div>
     </div>
 	
@@ -92,7 +121,7 @@
 	<a href="#"> Java Programming</a>
 	</br>
 	<div class="Enrole">
-	<a href="#"> Enrole </a>
+	<a href="Java_Programming.html"> Enroll </a>
 	</div>
     </div>
 	
@@ -103,7 +132,7 @@
 	<a href="#"> MySql Course</a>
 	</br>
 	<div class="Enrole">
-	<a href="#"> Enrole </a>
+	<a href="My_Sql.html"> Enrole </a>
 	</div>
     </div>
 </div>
@@ -213,7 +242,7 @@ Creating a website involves several key steps, from planning and designing to de
 	<input class="sectitle3" placeholder="Example:abc@gmail.com"    type  = "email"></br>
 	</br>
 	<p class="sectitle2" id="n">Feedback :</p> 
-	<textarea value="" placeholder="write your feedback here &#128512;"id="text" name="text" class="sectitle5" rows="8" cols="55" ></textarea></br>
+	<textarea value="" placeholder="write your feedback here &#128512;"id="text" name="text" class="sectitle5" rows="10" cols="40" ></textarea></br>
 	</br>
 	<a  href="Thankyou3.html" class="sectitle4" >submit</a> 
 	

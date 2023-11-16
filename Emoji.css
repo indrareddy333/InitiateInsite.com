@@ -1,4 +1,4 @@
-/*------ Main Emoji Styling ------*/
+
 
 .BodyPart{
 	width:80%;
@@ -10,7 +10,6 @@
 	padding:center;
 }
 .BodyPart h1{
-	
 	width:50%;
 	height:50px;
 	float:left;
@@ -154,4 +153,37 @@
   border-top: 0;
   -webkit-clip-path:inset(30% 0 0 0);
   clip-path:inset(30% 0 0 0);
+}
+@media only screen and (max-width:700px) {
+.BodyPart h1{
+	width:250px;
+	height:50px;
+	float:none;
+	padding-top:20px;
+	padding-left:20px;
+	font-family:poppins;
+	font-size:30px;
+	
+}
+.emoji {
+  width:auto%;
+  float: none;
+  zoom:1;
+  padding-top :5px;
+  padding-left:200px;
+}
+.BodyPart{
+	width:80%;
+	margin:0 auto auto;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	HEIGHT:300px;
+	margin-top:80px;
+	border-radius:20px;
+	padding:center;
+}
+	
+	
+	
+	
+	
 }
